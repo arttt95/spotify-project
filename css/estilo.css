@@ -76,6 +76,10 @@ nav.navbar-transparente {
     color: black;
 }
 
+.carousel-control-next, .carousel-control-prev {
+    width: 5%;
+}
+
 /* Estrutura de Conteúdos
 ---------------------------*/
 .caixa {
@@ -173,33 +177,52 @@ h3 {
         font-size: 3em;
     }
     .btn-custom {
-        margin: 10px 15px;
-        width: 300px;
-        font-size: medium;
+        margin: 8px 15px;
+        width: 280px;
+        font-size: 1em;
     }
 }
 
 /* Small devices (landscape phones, 576px and up)*/
 @media (min-width: 576px) and (max-width: 767.98px) {
     h1 {
-        font-size: 4em;
+        font-size: 3.5em;
     }
     .btn-custom {
         margin: 10px 15px;
+        width: 320px;
+        font-size: 1.2em;
+    }
+
+    .carousel-control-next {
+        right: -70px;
+    }
+
+    .carousel-control-prev {
+        left: -70px;
     }
 }
 
 /*  Medium devices (tablets, 768px and up)*/
 @media (min-width: 768px) and (max-width: 991.98px) {
     h1 {
-        font-size: 5em;
+        font-size: 4.2em;
     }
+
+    .carousel-control-next {
+        right: -30px;
+    }
+
+    .carousel-control-prev {
+        left: -30px;
+    }
+
 }
 
 /* Large devices (desktops, 992px and up)*/
 @media (min-width: 992px) and (max-width: 1199.98px){
     h1 {
-        font-size: 6em;
+        font-size: 5.2em;
     }
 }
 
@@ -214,5 +237,23 @@ h3 {
 @media (min-width: 1400px) {
     h1 {
         font-size: 8em;
+    }
+
+    .btn-custom {
+        width: 450px;
+        height: 65px;
+        font-size: 1.6em;
+    }
+
+    .carousel-control-next {
+        right: -100px;
+    }
+
+    .carousel-control-prev {
+        left: -100px;
+    }
+
+    .carousel-control-next i, .carousel-control-prev i {
+        font-size: 5em;
     }
 }
